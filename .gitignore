@@ -1,0 +1,19 @@
+# Secrets
+.env
+*.pem
+*.key
+
+# Python artifacts
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+
+# OS and IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
