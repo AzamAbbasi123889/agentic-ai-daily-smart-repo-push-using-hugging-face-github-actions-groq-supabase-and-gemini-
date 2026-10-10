@@ -2,7 +2,7 @@ name: Daily AI Project Brief Builder
 
 on:
   schedule:
-    # 08:00 Asia/Kolkata (02:30 UTC), once every day
+    # 08:00 AM India Standard Time = 02:30 UTC
     - cron: '30 2 * * *'
   workflow_dispatch:
 
@@ -16,9 +16,10 @@ concurrency:
 jobs:
   build-daily-brief:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 20
+
     steps:
-      - name: Checkout repository
+      - name: Checkout controller repository
         uses: actions/checkout@v4
 
       - name: Set up Python
@@ -32,29 +33,45 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Generate one detailed project brief
+      - name: Generate or reuse today's project brief
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           GROQ_MODEL: openai/gpt-oss-120b
+
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GEMINI_MODEL: gemini-3.8-flash
+
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
           HF_OPTIMIZER_MODEL: openai/gpt-oss-120b:fastest
+
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
           SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+
           GH_TOKEN: ${{ secrets.AGENT_GITHUB_TOKEN }}
           GITHUB_OWNER: AzamAbbasi123889
+
         run: python daily_brief_factory.py --require-supabase
 
-      - name: Commit today's brief and local fallback memory
+      - name: Publish today's project to a separate repository
+        env:
+          AGENT_GITHUB_TOKEN: ${{ secrets.AGENT_GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.AGENT_GITHUB_TOKEN }}
+          GITHUB_OWNER: AzamAbbasi123889
+          DAILY_PROJECT_PRIVATE: 'false'
+
+        run: python publish_daily_repo.py
+
+      - name: Save brief and history in controller
         run: |
           git config --local user.email "actions@github.com"
           git config --local user.name "Daily AI Project Brief Builder"
+
           git add daily_briefs data/brief_history.json
+
           if ! git diff --cached --quiet; then
             git commit -m "docs: add daily AI project brief [skip ci]"
             git push
           else
-            echo "No new brief to commit."
+            echo "No new controller changes."
           fi
