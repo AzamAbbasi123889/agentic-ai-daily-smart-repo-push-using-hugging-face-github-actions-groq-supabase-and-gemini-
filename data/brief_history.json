@@ -1,1 +1,30 @@
-[]
+[
+  {
+    "slug": "graphrag-academic-explorer",
+    "title": "Contextual GraphRAG for Academic Literature Exploration",
+    "category": "Advanced RAG and GraphRAG",
+    "summary": "An LLM‑augmented retrieval system that combines dense vector search with a Neo4j knowledge graph of research papers, enabling multi‑hop, citation‑aware answers to complex scholarly queries.",
+    "tech_stack": [
+      "FastAPI (lightweight HTTP API)",
+      "LangChain (LLM orchestration)",
+      "LangGraph (stateful graph‑based agent)",
+      "OpenAI gpt‑4o-mini (cheap LLM)",
+      "Sentence‑Transformers (embedding model)",
+      "Postgres + pgvector (store paper embeddings)",
+      "Neo4j (property graph for citations, entities, sections)",
+      "Docker (containerization)",
+      "GitHub Actions (CI/CD)",
+      "OpenTelemetry (observability)"
+    ],
+    "created_at": "2026-10-10T17:11:07.430168+00:00",
+    "status": "planned",
+    "brief_path": "daily_briefs/2026-10-10-graphrag-academic-explorer.md",
+    "ai_provider": "Groq / openai/gpt-oss-120b",
+    "optimizer": {
+      "enabled": true,
+      "status": "failed_keep_original",
+      "model": "openai/gpt-oss-120b:fastest",
+      "reason": "Client error '402 Payment Required' for url 'https://router.huggingface.co/v1/chat/completions' (Request ID: Root=1-6aca71a3-3956152d28670c37446762ce;5e92c4a0-55d2-4f80-aedb-c67cdf4238d7)\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/402\n\nYou have no remaining credits. Purchase pre-paid credits to continue using Inference Providers. Alternatively, subscribe to PRO to get monthly included credits."
+    }
+  }
+]
