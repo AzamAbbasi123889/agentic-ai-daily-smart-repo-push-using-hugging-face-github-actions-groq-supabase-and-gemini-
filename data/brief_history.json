@@ -54,5 +54,32 @@
       "model": "openai/gpt-oss-120b:fastest",
       "reason": "Client error '402 Payment Required' for url 'https://router.huggingface.co/v1/chat/completions' (Request ID: Root=1-6acb5381-07186b86765a732a1ec54ddb;6472034e-6bee-464a-b974-ddc46a0f248a)\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/402\n\nYou have no remaining credits. Purchase pre-paid credits to continue using Inference Providers. Alternatively, subscribe to PRO to get monthly included credits."
     }
+  },
+  {
+    "slug": "trace-llm-observability",
+    "title": "TraceLLM: End‑to‑End Observability & Automatic Evaluation Platform for LLM Inference",
+    "category": "LLM Evaluation and Observability",
+    "summary": "A lightweight SaaS‑style service that records every LLM call, stores prompts/responses with vector embeddings, streams OpenTelemetry traces, and automatically grades output with an LLM‑as‑judge. The data is visualized via a minimal React dashboard for latency, token usage and hallucination risk.",
+    "tech_stack": [
+      "Python – core language for FastAPI and LangChain integration",
+      "FastAPI – lightweight, async HTTP service with automatic OpenAPI docs",
+      "LangChain – orchestrates LLM calls and self‑critique",
+      "OpenTelemetry Python SDK – captures traces, metrics, and logs without code changes",
+      "PostgreSQL + pgvector – persistent relational store with native vector search",
+      "Redis – short‑term cache for embeddings to keep latency low",
+      "Docker & Docker‑Compose – reproducible dev & deployment environment",
+      "GitHub Actions – CI/CD, linting, unit & integration tests",
+      "React (Vite) – simple SPA for dashboards (no heavy UI frameworks)"
+    ],
+    "created_at": "2026-10-12T09:40:54.113271+00:00",
+    "status": "planned",
+    "brief_path": "daily_briefs/2026-10-12-trace-llm-observability.md",
+    "ai_provider": "Groq / openai/gpt-oss-120b",
+    "optimizer": {
+      "enabled": true,
+      "status": "failed_keep_original",
+      "model": "openai/gpt-oss-120b:fastest",
+      "reason": "Client error '402 Payment Required' for url 'https://router.huggingface.co/v1/chat/completions' (Request ID: Root=1-6accab24-11750183675c361365d9d271;4246aa3d-d378-48da-98fa-5897fcb2f6fe)\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/402\n\nYou have no remaining credits. Purchase pre-paid credits to continue using Inference Providers. Alternatively, subscribe to PRO to get monthly included credits."
+    }
   }
 ]
