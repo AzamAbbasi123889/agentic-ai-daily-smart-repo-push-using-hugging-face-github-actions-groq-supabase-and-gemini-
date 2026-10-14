@@ -108,5 +108,32 @@
       "model": "openai/gpt-oss-120b:fastest",
       "reason": "Client error '402 Payment Required' for url 'https://router.huggingface.co/v1/chat/completions' (Request ID: Root=1-6acdfd97-6c05e6763d83dda102b401a0;9d4a0949-8260-4b8a-b978-5a2e82a53675)\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/402\n\nYou have no remaining credits. Purchase pre-paid credits to continue using Inference Providers. Alternatively, subscribe to PRO to get monthly included credits."
     }
+  },
+  {
+    "slug": "adaptive-efficient-trainer",
+    "title": "Adaptive Efficient Trainer (AET) for Large Models on Consumer GPUs",
+    "category": "Deep Learning and Efficient Training",
+    "summary": "A lightweight web service that profiles a user’s GPU, dataset, and model, then automatically configures mixed‑precision, gradient checkpointing, dynamic batch sizing, and gradient accumulation to maximize throughput while staying within memory limits.",
+    "tech_stack": [
+      "FastAPI – lightweight HTTP API for profiling & optimizer endpoints",
+      "PyTorch – core DL framework for model loading and memory hooks",
+      "torch.cuda.amp – built‑in mixed‑precision support",
+      "torch.utils.checkpoint – gradient checkpointing implementation",
+      "psutil – system‑level GPU/CPU stats",
+      "Docker – reproducible container for the service",
+      "GitHub Actions – CI pipeline with MLflow tracking of benchmark runs",
+      "MLflow – experiment tracking for generated training configs",
+      "React (optional) – minimal UI for uploading model/dataset and displaying recommendations"
+    ],
+    "created_at": "2026-10-14T07:59:06.413939+00:00",
+    "status": "planned",
+    "brief_path": "daily_briefs/2026-10-14-adaptive-efficient-trainer.md",
+    "ai_provider": "Groq / openai/gpt-oss-120b",
+    "optimizer": {
+      "enabled": true,
+      "status": "failed_keep_original",
+      "model": "openai/gpt-oss-120b:fastest",
+      "reason": "Client error '402 Payment Required' for url 'https://router.huggingface.co/v1/chat/completions' (Request ID: Root=1-6acf3640-6ff31aec7523e3df1f0b5337;dac2dbe9-94c5-48a5-bca5-b5d5c686c341)\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/402\n\nYou have no remaining credits. Purchase pre-paid credits to continue using Inference Providers. Alternatively, subscribe to PRO to get monthly included credits."
+    }
   }
 ]
