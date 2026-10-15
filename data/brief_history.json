@@ -135,5 +135,30 @@
       "model": "openai/gpt-oss-120b:fastest",
       "reason": "Client error '402 Payment Required' for url 'https://router.huggingface.co/v1/chat/completions' (Request ID: Root=1-6acf3640-6ff31aec7523e3df1f0b5337;dac2dbe9-94c5-48a5-bca5-b5d5c686c341)\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/402\n\nYou have no remaining credits. Purchase pre-paid credits to continue using Inference Providers. Alternatively, subscribe to PRO to get monthly included credits."
     }
+  },
+  {
+    "slug": "contextual-code-refactoring-assistant",
+    "title": "Contextual Code Refactoring Assistant",
+    "category": "AI Developer Tools and Code Intelligence",
+    "summary": "A privacy‑first web service that builds a lightweight code‑entity graph from a user’s repository and uses an LLM to suggest context‑aware refactorings, supporting one‑click apply via a REST API.",
+    "tech_stack": [
+      "FastAPI – lightweight async API server",
+      "Neo4j – stores code graph for fast traversal and context retrieval",
+      "LangChain – orchestrates LLM prompts with retrieved graph context",
+      "Sentence‑Transformers (all‑MiniLM) – embeds code snippets for similarity search",
+      "Docker – reproducible container for local deployment",
+      "GitHub Actions – CI/CD pipeline with unit & integration tests",
+      "OpenTelemetry – optional tracing for performance monitoring"
+    ],
+    "created_at": "2026-10-15T07:46:12.139825+00:00",
+    "status": "planned",
+    "brief_path": "daily_briefs/2026-10-15-contextual-code-refactoring-assistant.md",
+    "ai_provider": "Groq / openai/gpt-oss-120b",
+    "optimizer": {
+      "enabled": true,
+      "status": "failed_keep_original",
+      "model": "openai/gpt-oss-120b:fastest",
+      "reason": "Client error '402 Payment Required' for url 'https://router.huggingface.co/v1/chat/completions' (Request ID: Root=1-6ad083db-226dbc10353d9b981e3ec98b;b9cb5a2d-42b8-4a9d-9f9b-f1e2df426bba)\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/402\n\nYou have no remaining credits. Purchase pre-paid credits to continue using Inference Providers. Alternatively, subscribe to PRO to get monthly included credits."
+    }
   }
 ]
