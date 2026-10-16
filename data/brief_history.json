@@ -160,5 +160,34 @@
       "model": "openai/gpt-oss-120b:fastest",
       "reason": "Client error '402 Payment Required' for url 'https://router.huggingface.co/v1/chat/completions' (Request ID: Root=1-6ad083db-226dbc10353d9b981e3ec98b;b9cb5a2d-42b8-4a9d-9f9b-f1e2df426bba)\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/402\n\nYou have no remaining credits. Purchase pre-paid credits to continue using Inference Providers. Alternatively, subscribe to PRO to get monthly included credits."
     }
+  },
+  {
+    "slug": "multimodal-storyboard-generator",
+    "title": "AI-Powered Multimodal Storyboard Generator",
+    "category": "Computer Vision and Multimodal AI",
+    "summary": "A web service that turns a set of user‑provided images and a short textual theme into a short narrated video storyboard using diffusion‑based frame interpolation and LLM‑driven narration.",
+    "tech_stack": [
+      "FastAPI - lightweight async API",
+      "React - simple UI for uploads and preview",
+      "Stable Diffusion 2.1 (via diffusers) - frame generation",
+      "LangChain - orchestration of LLM and image pipeline",
+      "Llama‑3 via Ollama - narrative generation",
+      "Coqui TTS - offline text‑to‑speech",
+      "Postgres + pgvector - store image embeddings for similarity search",
+      "Redis - job queue & caching",
+      "Docker - reproducible environment",
+      "GitHub Actions - CI/CD pipeline",
+      "OpenTelemetry - tracing of pipeline steps"
+    ],
+    "created_at": "2026-10-16T07:29:13.374755+00:00",
+    "status": "planned",
+    "brief_path": "daily_briefs/2026-10-16-multimodal-storyboard-generator.md",
+    "ai_provider": "Groq / openai/gpt-oss-120b",
+    "optimizer": {
+      "enabled": true,
+      "status": "failed_keep_original",
+      "model": "openai/gpt-oss-120b:fastest",
+      "reason": "Client error '402 Payment Required' for url 'https://router.huggingface.co/v1/chat/completions' (Request ID: Root=1-6ad1d247-03eaca0a62d632f103354da0;2971bd7f-076c-4176-aa39-992f7a4665c6)\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/402\n\nYou have no remaining credits. Purchase pre-paid credits to continue using Inference Providers. Alternatively, subscribe to PRO to get monthly included credits."
+    }
   }
 ]
