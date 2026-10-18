@@ -214,5 +214,31 @@
       "model": "openai/gpt-oss-120b:fastest",
       "reason": "Client error '402 Payment Required' for url 'https://router.huggingface.co/v1/chat/completions' (Request ID: Root=1-6ad31f9c-02d0e27e313f42ad46b2838f;21e3c500-75b8-4f9c-9131-b65eea31c01e)\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/402\n\nYou have no remaining credits. Purchase pre-paid credits to continue using Inference Providers. Alternatively, subscribe to PRO to get monthly included credits."
     }
+  },
+  {
+    "slug": "claimgraph-nli-cross-encoder-attribution",
+    "title": "ClaimGraph-NLI: Attributed Multi-Document Contradiction and Consistency Matrix Engine",
+    "category": "Transformers and NLP",
+    "summary": "ClaimGraph-NLI is an interpretable NLP service that audits multi-source technical documents to detect factual contradictions, qualifiers, and semantic drift at the clause level. By pairing a DeBERTa-v3 cross-encoder inference pipeline with token-level gradient attribution (Integrated Gradients), it maps out an interactive contradiction graph identifying the exact lexical spans responsible for factual conflicts.",
+    "tech_stack": [
+      "Python 3.11 for core pipeline orchestration",
+      "Hugging Face Transformers (DeBERTa-v3-base fine-tuned on MNLI/ANLI) for high-precision cross-encoder NLI inference",
+      "PyTorch and Captum for Integrated Gradients and token-level attribution computation",
+      "spaCy (en_core_web_trf) for sentence boundary detection, dependency parsing, and atomic claim extraction",
+      "FastAPI for asynchronous, low-latency REST API endpoints",
+      "NetworkX for directed contradiction and entailment graph modeling",
+      "PostgreSQL with pgvector for persistent storage of documents, decomposed claims, and sentence embeddings",
+      "Docker for isolated, reproducible container deployment"
+    ],
+    "created_at": "2026-10-18T07:25:23.249319+00:00",
+    "status": "planned",
+    "brief_path": "daily_briefs/2026-10-18-claimgraph-nli-cross-encoder-attribution.md",
+    "ai_provider": "Gemini fallback / gemini-3.8-flash",
+    "optimizer": {
+      "enabled": true,
+      "status": "failed_keep_original",
+      "model": "openai/gpt-oss-120b:fastest",
+      "reason": "Client error '402 Payment Required' for url 'https://router.huggingface.co/v1/chat/completions' (Request ID: Root=1-6ad47460-2515adaf3c0e94a0324ef491;5aaee5c8-6449-447d-a293-bf7afa8326cd)\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/402\n\nYou have no remaining credits. Purchase pre-paid credits to continue using Inference Providers. Alternatively, subscribe to PRO to get monthly included credits."
+    }
   }
 ]
