@@ -240,5 +240,31 @@
       "model": "openai/gpt-oss-120b:fastest",
       "reason": "Client error '402 Payment Required' for url 'https://router.huggingface.co/v1/chat/completions' (Request ID: Root=1-6ad47460-2515adaf3c0e94a0324ef491;5aaee5c8-6449-447d-a293-bf7afa8326cd)\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/402\n\nYou have no remaining credits. Purchase pre-paid credits to continue using Inference Providers. Alternatively, subscribe to PRO to get monthly included credits."
     }
+  },
+  {
+    "slug": "collaborative-multi-agent-study-planner",
+    "title": "Collaborative Multi-Agent Study Planner",
+    "category": "Agentic AI and Multi-Agent Systems",
+    "summary": "An agentic web service that composes personalized study schedules by coordinating specialized LLM agents (Curriculum Analyzer, Time Optimizer, Motivation Coach) and lets users track progress through a lightweight UI.",
+    "tech_stack": [
+      "FastAPI (lightweight, async API serving)",
+      "LangChain + LangGraph (structured multi‑agent orchestration)",
+      "OpenAI / Groq LLMs (fast inference)",
+      "PostgreSQL + pgvector (store user data and embeddings)",
+      "Redis (short‑term cache of agent states)",
+      "Docker (containerization)",
+      "GitHub Actions (CI/CD)",
+      "React (simple responsive UI)"
+    ],
+    "created_at": "2026-10-19T08:03:17.352778+00:00",
+    "status": "planned",
+    "brief_path": "daily_briefs/2026-10-19-collaborative-multi-agent-study-planner.md",
+    "ai_provider": "Groq / openai/gpt-oss-120b",
+    "optimizer": {
+      "enabled": true,
+      "status": "failed_keep_original",
+      "model": "openai/gpt-oss-120b:fastest",
+      "reason": "Client error '402 Payment Required' for url 'https://router.huggingface.co/v1/chat/completions' (Request ID: Root=1-6ad5ceb9-374750e8111cc261572f4932;40ddf025-a52d-4502-a99f-a0f9be60e40a)\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/402\n\nYou have no remaining credits. Purchase pre-paid credits to continue using Inference Providers. Alternatively, subscribe to PRO to get monthly included credits."
+    }
   }
 ]
