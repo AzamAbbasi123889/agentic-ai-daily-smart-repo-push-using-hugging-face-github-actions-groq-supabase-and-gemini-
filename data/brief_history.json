@@ -319,5 +319,32 @@
       "model": "openai/gpt-oss-120b:fastest",
       "reason": "Client error '402 Payment Required' for url 'https://router.huggingface.co/v1/chat/completions' (Request ID: Root=1-6ad87065-4660e07f6fb7164b0d19682a;ad36540a-0f03-4143-967c-217aecf2101f)\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/402\n\nYou have no remaining credits. Purchase pre-paid credits to continue using Inference Providers. Alternatively, subscribe to PRO to get monthly included credits."
     }
+  },
+  {
+    "slug": "multi-agent-litreview-composer",
+    "title": "Multi‑Agent Literature Review Composer",
+    "category": "LangChain, LangGraph, CrewAI",
+    "summary": "An agentic web service that automatically generates a structured, citation‑rich literature review on a user‑specified topic by coordinating specialized LLM agents for search, extraction, citation graph building, gap analysis, and drafting, all orchestrated with LangGraph and CrewAI.",
+    "tech_stack": [
+      "FastAPI (lightweight HTTP API)",
+      "LangChain (LLM wrappers, document loaders)",
+      "LangGraph (state‑machine orchestration of agents)",
+      "CrewAI (role‑based agent definitions)",
+      "Postgres with pgvector (store paper metadata & embeddings)",
+      "Neo4j (citation graph)",
+      "OpenAI/gpt‑4o-mini (free tier LLM)",
+      "Docker (containerisation)",
+      "GitHub Actions (CI/CD)"
+    ],
+    "created_at": "2026-10-22T07:54:17.477145+00:00",
+    "status": "planned",
+    "brief_path": "daily_briefs/2026-10-22-multi-agent-litreview-composer.md",
+    "ai_provider": "Groq / openai/gpt-oss-120b",
+    "optimizer": {
+      "enabled": true,
+      "status": "failed_keep_original",
+      "model": "openai/gpt-oss-120b:fastest",
+      "reason": "Client error '402 Payment Required' for url 'https://router.huggingface.co/v1/chat/completions' (Request ID: Root=1-6ad9c127-45199f82195da6fc272cafaf;22e468f3-5903-4876-9f7f-058865f50514)\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/402\n\nYou have no remaining credits. Purchase pre-paid credits to continue using Inference Providers. Alternatively, subscribe to PRO to get monthly included credits."
+    }
   }
 ]
