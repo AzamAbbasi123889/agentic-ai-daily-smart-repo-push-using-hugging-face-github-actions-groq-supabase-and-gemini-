@@ -373,5 +373,32 @@
       "model": "openai/gpt-oss-120b:fastest",
       "reason": "Client error '402 Payment Required' for url 'https://router.huggingface.co/v1/chat/completions' (Request ID: Root=1-6adb129a-5c762f6c09e0be59248612b3;6b683b15-eea2-4e71-8583-c741813b1979)\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/402\n\nYou have no remaining credits. Purchase pre-paid credits to continue using Inference Providers. Alternatively, subscribe to PRO to get monthly included credits."
     }
+  },
+  {
+    "slug": "voltconformal-probabilistic-load-forecasting",
+    "title": "VoltConformal: Conformal Probabilistic Net-Load Forecasting and Microgrid Energy Arbitrage Engine",
+    "category": "Applied ML and Forecasting",
+    "summary": "VoltConformal is a production-grade probabilistic net-load forecasting and battery dispatch engine for decentralized solar-plus-storage microgrids. It combines gradient-boosted quantile regressors with inductive split-conformal prediction to output rigorous, finite-sample coverage intervals for volatile renewable generation and net load. An integrated linear programming dispatch solver uses these risk-bounded forecasts to execute cost-optimal, battery-degradation-aware energy arbitrage under dynamic time-of-use electricity tariffs.",
+    "tech_stack": [
+      "Python 3.11 for primary model training, conformal calibration, and orchestration",
+      "FastAPI for high-throughput, low-latency prediction and dispatch REST API endpoints",
+      "LightGBM with custom pinball/quantile loss objectives for multi-horizon quantile regression (P10, P50, P90)",
+      "MAPIE (Model Agnostic Prediction Interval Estimator) for distribution-free split conformal inference with valid empirical coverage",
+      "PuLP / SciPy Optimize for formulating and solving the constrained battery arbitrage linear program",
+      "Polars and DuckDB for out-of-core feature engineering and high-frequency meter aggregation (15-minute intervals)",
+      "Pydantic v2 for strict runtime schema validation of time-series payloads and dispatch policies",
+      "Docker and Docker Compose for reproducible, containerized local and cloud deployment",
+      "GitHub Actions for automated CI, linting, and continuous model backtesting validation"
+    ],
+    "created_at": "2026-10-24T07:43:13.187986+00:00",
+    "status": "planned",
+    "brief_path": "daily_briefs/2026-10-24-voltconformal-probabilistic-load-forecasting.md",
+    "ai_provider": "Gemini fallback / gemini-3.8-flash",
+    "optimizer": {
+      "enabled": true,
+      "status": "failed_keep_original",
+      "model": "openai/gpt-oss-120b:fastest",
+      "reason": "Client error '402 Payment Required' for url 'https://router.huggingface.co/v1/chat/completions' (Request ID: Root=1-6adc613d-34d8fecd73a0b4ba29807f6f;1f526334-43b1-4e00-a369-1511a1e0922c)\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/402\n\nYou have no remaining credits. Purchase pre-paid credits to continue using Inference Providers. Alternatively, subscribe to PRO to get monthly included credits."
+    }
   }
 ]
