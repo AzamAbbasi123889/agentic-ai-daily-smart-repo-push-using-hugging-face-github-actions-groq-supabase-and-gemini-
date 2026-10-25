@@ -400,5 +400,31 @@
       "model": "openai/gpt-oss-120b:fastest",
       "reason": "Client error '402 Payment Required' for url 'https://router.huggingface.co/v1/chat/completions' (Request ID: Root=1-6adc613d-34d8fecd73a0b4ba29807f6f;1f526334-43b1-4e00-a369-1511a1e0922c)\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/402\n\nYou have no remaining credits. Purchase pre-paid credits to continue using Inference Providers. Alternatively, subscribe to PRO to get monthly included credits."
     }
+  },
+  {
+    "slug": "policygraph-agent-iac-security-remediation",
+    "title": "PolicyGraph-Agent: Multi-Agent Autonomous IaC Security Remediation Engine with LangGraph Verification Cycles",
+    "category": "LangChain, LangGraph and CrewAI",
+    "summary": "PolicyGraph-Agent is an autonomous security remediation system that ingests Infrastructure-as-Code (Terraform/OpenTofu) static scan findings, maps resource dependency graphs, and generates drift-safe configuration patches. Orchestrated via LangGraph stateful cycles and specialized CrewAI worker agents, the engine validates synthesized patches inside ephemeral OpenTofu sandbox containers to ensure zero unintended infrastructure destruction before routing to human-in-the-loop review.",
+    "tech_stack": [
+      "Python 3.11+ for robust asynchronous backend and agent orchestration",
+      "LangGraph for cyclic graph routing, state channels, checkpointer persistence, and human-in-the-loop interrupts",
+      "CrewAI for role-specialized collaborative sub-agents (Security Auditor, Dependency Grapher, HCL Synthesizer)",
+      "FastAPI for high-throughput asynchronous REST endpoints and webhook triggers",
+      "OpenTofu / Terraform CLI in Docker for deterministic, isolated syntax verification and execution plan generation",
+      "python-hcl2 and tree-sitter-hcl for fast AST parsing and resource dependency mapping",
+      "SQLite / Redis with LangGraph MemorySaver for durable thread state and execution history caching",
+      "Pydantic v2 for strict schema definition and structured LLM tool outputs"
+    ],
+    "created_at": "2026-10-25T07:52:53.206133+00:00",
+    "status": "planned",
+    "brief_path": "daily_briefs/2026-10-25-policygraph-agent-iac-security-remediation.md",
+    "ai_provider": "Gemini fallback / gemini-3.8-flash",
+    "optimizer": {
+      "enabled": true,
+      "status": "failed_keep_original",
+      "model": "openai/gpt-oss-120b:fastest",
+      "reason": "Client error '402 Payment Required' for url 'https://router.huggingface.co/v1/chat/completions' (Request ID: Root=1-6addb50a-75ead09b4abb9b1029fa054e;f78b2b95-e2b4-4059-8729-9a5d72a23909)\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/402\n\nYou have no remaining credits. Purchase pre-paid credits to continue using Inference Providers. Alternatively, subscribe to PRO to get monthly included credits."
+    }
   }
 ]
