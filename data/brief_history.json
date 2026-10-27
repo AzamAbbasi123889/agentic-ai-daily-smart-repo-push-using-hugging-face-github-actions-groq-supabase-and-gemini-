@@ -452,5 +452,32 @@
       "model": "openai/gpt-oss-120b:fastest",
       "reason": "Client error '402 Payment Required' for url 'https://router.huggingface.co/v1/chat/completions' (Request ID: Root=1-6adf09a6-28c52c1c1d825d410f4c6777;b83c8ef0-e0a3-4931-82e6-9277306f19a1)\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/402\n\nYou have no remaining credits. Purchase pre-paid credits to continue using Inference Providers. Alternatively, subscribe to PRO to get monthly included credits."
     }
+  },
+  {
+    "slug": "decisionrag-policy-navigator",
+    "title": "DecisionRAG‑Powered Enterprise Policy Navigator",
+    "category": "Advanced RAG and GraphRAG",
+    "summary": "A privacy‑first FastAPI service that ingests corporate policy PDFs, builds a Neo4j knowledge graph of clauses, and uses Retrieval‑Free DecisionRAG to answer employee queries without a separate vector store.",
+    "tech_stack": [
+      "FastAPI – lightweight async API layer",
+      "LangChain + LangGraph – orchestrate DecisionRAG reasoning and graph traversal",
+      "Neo4j – native graph storage for policy hierarchy",
+      "pgvector (Postgres) – fallback dense store for ambiguous queries",
+      "pypdf / pdfminer – PDF ingestion",
+      "Docker – reproducible containerization",
+      "GitHub Actions – CI/CD pipeline",
+      "OpenTelemetry – request tracing",
+      "DVC – version control for policy document snapshots"
+    ],
+    "created_at": "2026-10-27T08:22:44.201691+00:00",
+    "status": "planned",
+    "brief_path": "daily_briefs/2026-10-27-decisionrag-policy-navigator.md",
+    "ai_provider": "Groq / openai/gpt-oss-120b",
+    "optimizer": {
+      "enabled": true,
+      "status": "failed_keep_original",
+      "model": "openai/gpt-oss-120b:fastest",
+      "reason": "Client error '402 Payment Required' for url 'https://router.huggingface.co/v1/chat/completions' (Request ID: Root=1-6ae05e89-2bb01e255d5074397433d21a;f26e2d9e-bf8b-4637-896d-e2c5f5f86a11)\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/402\n\nYou have no remaining credits. Purchase pre-paid credits to continue using Inference Providers. Alternatively, subscribe to PRO to get monthly included credits."
+    }
   }
 ]
