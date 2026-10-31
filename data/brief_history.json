@@ -531,5 +531,31 @@
       "model": "openai/gpt-oss-120b:fastest",
       "reason": "Client error '402 Payment Required' for url 'https://router.huggingface.co/v1/chat/completions' (Request ID: Root=1-6ae45b77-6f454e5d3b681615267fcc9d;4884bb64-79f3-4b78-b6c8-d0caea76722b)\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/402\n\nYou have no remaining credits. Purchase pre-paid credits to continue using Inference Providers. Alternatively, subscribe to PRO to get monthly included credits."
     }
+  },
+  {
+    "slug": "feature-attribution-drift-monitor",
+    "title": "Continuous Feature Attribution & Drift Monitoring Platform",
+    "category": "MLOps and Model Monitoring",
+    "summary": "A FastAPI‑based SaaS that ingests production predictions, records per‑instance SHAP explanations, detects drift in feature importance over time, visualizes trends, and alerts engineers with root‑cause suggestions. The MVP stores data in Postgres + pgvector, uses MLflow for model versioning, and runs in Docker for easy deployment.",
+    "tech_stack": [
+      "FastAPI (lightweight async API)",
+      "PostgreSQL with pgvector (persistent storage of embeddings & SHAP vectors)",
+      "MLflow (model registry & versioning)",
+      "Redis (caching recent predictions)",
+      "Docker (containerization)",
+      "GitHub Actions (CI/CD)",
+      "Grafana (dashboard visualizations)",
+      "scikit‑learn & shap (attribution computation)"
+    ],
+    "created_at": "2026-10-31T08:48:11.905255+00:00",
+    "status": "planned",
+    "brief_path": "daily_briefs/2026-10-31-feature-attribution-drift-monitor.md",
+    "ai_provider": "Groq / openai/gpt-oss-120b",
+    "optimizer": {
+      "enabled": true,
+      "status": "failed_keep_original",
+      "model": "openai/gpt-oss-120b:fastest",
+      "reason": "Client error '402 Payment Required' for url 'https://router.huggingface.co/v1/chat/completions' (Request ID: Root=1-6ae5aade-388d7a0a2ff99d164dbd3550;988e7cd3-a313-45e7-b918-5b45638b5ede)\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/402\n\nYou have no remaining credits. Purchase pre-paid credits to continue using Inference Providers. Alternatively, subscribe to PRO to get monthly included credits."
+    }
   }
 ]
