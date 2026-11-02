@@ -584,5 +584,31 @@
       "model": "openai/gpt-oss-120b:fastest",
       "reason": "Client error '402 Payment Required' for url 'https://router.huggingface.co/v1/chat/completions' (Request ID: Root=1-6ae7083d-6ced333005c87776067480eb;28db5a27-07eb-4b62-9aaa-aa4930b94b25)\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/402\n\nYou have no remaining credits. Purchase pre-paid credits to continue using Inference Providers. Alternatively, subscribe to PRO to get monthly included credits."
     }
+  },
+  {
+    "slug": "personal-finance-goal-agentic-advisor",
+    "title": "Personal Finance Goal Agentic Advisor",
+    "category": "Agentic AI and Multi-Agent Systems",
+    "summary": "A privacy‑first web service that ingests a user's transaction feed, builds a graph of financial behaviors, and orchestrates multiple LLM agents to generate personalized budgeting advice, savings plans, and goal‑driven forecasts.",
+    "tech_stack": [
+      "FastAPI (lightweight API layer)",
+      "LangGraph (orchestrates multi‑agent workflow)",
+      "OpenAI GPT‑4o-mini via Azure OpenAI (LLM core)",
+      "pgvector in PostgreSQL (semantic search of transaction descriptions)",
+      "Neo4j (expense category graph & relationship reasoning)",
+      "Redis (task queue & short‑term cache)",
+      "Docker (containerization)",
+      "GitHub Actions (CI/CD)"
+    ],
+    "created_at": "2026-11-02T09:53:02.800980+00:00",
+    "status": "planned",
+    "brief_path": "daily_briefs/2026-11-02-personal-finance-goal-agentic-advisor.md",
+    "ai_provider": "Groq / openai/gpt-oss-120b",
+    "optimizer": {
+      "enabled": true,
+      "status": "failed_keep_original",
+      "model": "openai/gpt-oss-120b:fastest",
+      "reason": "Client error '402 Payment Required' for url 'https://router.huggingface.co/v1/chat/completions' (Request ID: Root=1-6ae85d7a-6b785ec41beef30c478b3a9c;aeab9314-d6b1-4783-b509-f9c99d7ddefa)\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/402\n\nYou have no remaining credits. Purchase pre-paid credits to continue using Inference Providers. Alternatively, subscribe to PRO to get monthly included credits."
+    }
   }
 ]
