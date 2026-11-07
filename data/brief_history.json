@@ -664,5 +664,33 @@
       "model": "openai/gpt-oss-120b:fastest",
       "reason": "Client error '402 Payment Required' for url 'https://router.huggingface.co/v1/chat/completions' (Request ID: Root=1-6aeda1bf-151a1f1a3dda04975803d619;3358a85d-852b-4a9b-8ad6-77e4027538c7)\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/402\n\nPurchase pre-paid credits to continue using Inference Providers. Alternatively, subscribe to PRO to get monthly included credits."
     }
+  },
+  {
+    "slug": "careerpath-agentic-advisor",
+    "title": "CareerPath Agentic Advisor",
+    "category": "Agentic AI Systems",
+    "summary": "An agentic web service that ingests a user's education, experience, and interests, pulls real‑time public job market data, and produces a personalized, step‑by‑step career roadmap with skill‑gap analysis and resource recommendations using LangChain, LangGraph and CrewAI.",
+    "tech_stack": [
+      "FastAPI – lightweight, async API layer",
+      "LangChain – prompt engineering, retrieval augmentation",
+      "LangGraph – state‑graph orchestration of multi‑agent workflow",
+      "CrewAI – task decomposition and collaborative agent execution",
+      "OpenAI/Groq LLMs – inference (free tier for MVP)",
+      "Postgres + pgvector – store user profiles, job embeddings, similarity search",
+      "Redis – short‑term cache for API responses",
+      "Docker – reproducible container environment",
+      "GitHub Actions – CI/CD pipeline with linting and testing",
+      "React – minimal SPA to visualize roadmap (optional)"
+    ],
+    "created_at": "2026-11-07T09:09:49.295187+00:00",
+    "status": "planned",
+    "brief_path": "daily_briefs/2026-11-07-careerpath-agentic-advisor.md",
+    "ai_provider": "Groq / openai/gpt-oss-120b",
+    "optimizer": {
+      "enabled": true,
+      "status": "failed_keep_original",
+      "model": "openai/gpt-oss-120b:fastest",
+      "reason": "Client error '402 Payment Required' for url 'https://router.huggingface.co/v1/chat/completions' (Request ID: Root=1-6aeeeada-7f9901dd1065796052986f9b;84594b21-a613-4fba-82d8-4caf1f54e325)\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/402\n\nPurchase pre-paid credits to continue using Inference Providers. Alternatively, subscribe to PRO to get monthly included credits."
+    }
   }
 ]
