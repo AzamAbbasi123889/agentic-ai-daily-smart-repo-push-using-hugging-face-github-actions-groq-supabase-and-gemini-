@@ -805,5 +805,30 @@
       "model": "openai/gpt-oss-120b:fastest",
       "reason": "Client error '402 Payment Required' for url 'https://router.huggingface.co/v1/chat/completions' (Request ID: Root=1-6af6de69-7242efd169ba7149442c7d5f;768ad60c-f72b-4618-baff-0cf50d046c45)\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/402\n\nPurchase pre-paid credits to continue using Inference Providers. Alternatively, subscribe to PRO to get monthly included credits."
     }
+  },
+  {
+    "slug": "open-source-onboarding-assistant",
+    "title": "Open-Source Project Onboarding Assistant",
+    "category": "LangChain",
+    "summary": "A multi‑agent SaaS that ingests a GitHub repository, builds a lightweight code‑entity graph, and generates personalized onboarding guides, FAQ bots, and contribution checklists for different contributor roles.",
+    "tech_stack": [
+      "FastAPI (lightweight HTTP API)",
+      "LangChain (retrieval & LLM wrappers)",
+      "LangGraph (state‑machine orchestration of agents)",
+      "CrewAI (task‑level coordination)",
+      "pgvector + PostgreSQL (semantic storage of embeddings)",
+      "Neo4j (code‑entity graph)",
+      "Docker (containerization)"
+    ],
+    "created_at": "2026-11-15T09:52:25.257928+00:00",
+    "status": "planned",
+    "brief_path": "daily_briefs/2026-11-15-open-source-onboarding-assistant.md",
+    "ai_provider": "Groq / openai/gpt-oss-120b",
+    "optimizer": {
+      "enabled": true,
+      "status": "failed_keep_original",
+      "model": "openai/gpt-oss-120b:fastest",
+      "reason": "Client error '402 Payment Required' for url 'https://router.huggingface.co/v1/chat/completions' (Request ID: Root=1-6af98009-7ce112eb640fd5966a8e1624;2dd6be99-c712-4559-a8f3-ab1a472d1918)\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/402\n\nPurchase pre-paid credits to continue using Inference Providers. Alternatively, subscribe to PRO to get monthly included credits."
+    }
   }
 ]
