@@ -830,5 +830,29 @@
       "model": "openai/gpt-oss-120b:fastest",
       "reason": "Client error '402 Payment Required' for url 'https://router.huggingface.co/v1/chat/completions' (Request ID: Root=1-6af98009-7ce112eb640fd5966a8e1624;2dd6be99-c712-4559-a8f3-ab1a472d1918)\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/402\n\nPurchase pre-paid credits to continue using Inference Providers. Alternatively, subscribe to PRO to get monthly included credits."
     }
+  },
+  {
+    "slug": "elasticgrad-dynamic-activation-checkpointing-engine",
+    "title": "ElasticGrad: Dynamic Activation-Budgeted Checkpointing and Gradient Sparsification Engine",
+    "category": "Deep Learning and Efficient Training",
+    "summary": "ElasticGrad is an efficient PyTorch training framework and observability engine that dynamically mitigates VRAM memory spikes during deep transformer and vision backbone training. By tracing runtime layer activation tensors and gradient variance on the fly, it selectively applies activation checkpointing only to peak-memory layers and introduces error-compensated gradient sparsification. The system features an interactive FastAPI/React telemetry studio that profiles compute throughput, prevents CUDA Out-Of-Memory (OOM) failures, and outputs optimal training execution recipes.",
+    "tech_stack": [
+      "PyTorch (core deep learning framework, custom autograd hooks, and PyTorch Profiler)",
+      "FastAPI (high-performance asynchronous API for telemetry streaming and run orchestration)",
+      "MLflow (tracking training metrics, convergence curves, and hardware consumption)",
+      "Redis (caching real-time layer-level activation footprints and gradient statistics)",
+      "React with Tailwind CSS & Recharts (interactive dashboard for layer memory maps and training telemetry)",
+      "Docker & Docker Compose (containerized local environment with NVIDIA Container Toolkit support)"
+    ],
+    "created_at": "2026-11-16T10:12:45.787116+00:00",
+    "status": "planned",
+    "brief_path": "daily_briefs/2026-11-16-elasticgrad-dynamic-activation-checkpointing-engine.md",
+    "ai_provider": "Gemini fallback / gemini-3.8-flash",
+    "optimizer": {
+      "enabled": true,
+      "status": "failed_keep_original",
+      "model": "openai/gpt-oss-120b:fastest",
+      "reason": "Client error '402 Payment Required' for url 'https://router.huggingface.co/v1/chat/completions' (Request ID: Root=1-6afad71a-4dca0c660f0717fd32f41eed;df1118e0-6e89-4900-b52c-752f20855abc)\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/402\n\nPurchase pre-paid credits to continue using Inference Providers. Alternatively, subscribe to PRO to get monthly included credits."
+    }
   }
 ]
