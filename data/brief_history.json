@@ -880,5 +880,31 @@
       "model": "openai/gpt-oss-120b:fastest",
       "reason": "Client error '402 Payment Required' for url 'https://router.huggingface.co/v1/chat/completions' (Request ID: Root=1-6afc3457-00a2c83b7f0cad3b1f5f68d3;b7ee0c6f-abc6-48db-bcff-84bd7ec0d1a4)\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/402\n\nPurchase pre-paid credits to continue using Inference Providers. Alternatively, subscribe to PRO to get monthly included credits."
     }
+  },
+  {
+    "slug": "promptguard-privacy-first-auditor",
+    "title": "PromptGuard: Privacy‑First Prompt Injection & Leakage Auditor",
+    "category": "AI Safety, Privacy and Security",
+    "summary": "A lightweight web service that lets developers audit LLM prompts and responses for injection attacks and accidental privacy leaks. It combines contrastive prototype jailbreak detection with differential‑privacy‑aware leakage scoring, offering an API‑first experience that never stores raw user data long‑term.",
+    "tech_stack": [
+      "FastAPI – lightweight async API layer",
+      "LangChain – orchestrates LLM calls and prompt templates",
+      "Sentence‑Transformers (all‑MiniLM‑L6‑v2) – fast embedding for similarity checks",
+      "PyTorch – host the contrastive prototype detector (from Jailbreak Detection paper)",
+      "PostgreSQL + pgvector – stores audit metadata and vector embeddings for later analytics",
+      "Redis – short‑term cache of recent embeddings to meet sub‑500 ms latency",
+      "Docker & Docker‑Compose – reproducible dev/prod environment",
+      "GitHub Actions – CI/CD with linting, unit tests and Docker image build"
+    ],
+    "created_at": "2026-11-19T10:47:00.424842+00:00",
+    "status": "planned",
+    "brief_path": "daily_briefs/2026-11-19-promptguard-privacy-first-auditor.md",
+    "ai_provider": "Groq / openai/gpt-oss-120b",
+    "optimizer": {
+      "enabled": true,
+      "status": "failed_keep_original",
+      "model": "openai/gpt-oss-120b:fastest",
+      "reason": "Client error '402 Payment Required' for url 'https://router.huggingface.co/v1/chat/completions' (Request ID: Root=1-6afed27e-59b33579399df1075a9abf95;4e131e38-c2f5-471e-863a-ba42916de521)\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/402\n\nPurchase pre-paid credits to continue using Inference Providers. Alternatively, subscribe to PRO to get monthly included credits."
+    }
   }
 ]
